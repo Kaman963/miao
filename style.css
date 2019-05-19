@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* 清除内外边框，让盒子自适应宽度高度 */
 header{
     border-style: solid;
     background-color: #000;
