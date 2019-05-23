@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        
+    }
+    div {
+      overflow: auto;
+      width: 800px;
+      height: 300px;
+      border: 1px solid white;
+      margin: 12% auto;
+      
+      
+
+      
+    }
+    .table {
+      width: 1200px;
+      height: 300px;
+      border-collapse: collapse;
+     
+      
+      
+      
+    }
+    .table th {
+      
+      white-space: nowrap;
+    }
+    .table td {
+      
+      white-space: nowrap;
+    }
+    div .table thead th  {
+      
+      vertical-align: bottom;
+      border-bottom: 2px solid gray;
+      text-align: center;
+      background-color:  white;
+      line-height: 70px;
+      border-top:  solid gray;
+      
+    
+    
+    }
+    div .table  tr td, table tr th {
+      vertical-align: bottom;
+      border-bottom: 1px solid gray;
+      text-align: center;
+      background-color:  white;
+    }
+    header .table {
+         width: 900px;
+         height: 300px;
+         margin: 12% auto;
+         line-height: 50px;
+         border-top: 1px solid rgb(193,193,193);
+         border-collapse:collapse;
+         
+         
+
+    }
+    
+    header .table-active, header .table-active th {
+      background-color: rgb(218, 218, 218);
+      border-top: solid rgb(218, 218, 218);
+    }
+    header .table-default, header .table-default th{
+      border-top: solid white;
+    }
+    header .table-primary, header .table-primary th   {
+      background-color: rgb(184,218,255);
+      border-top: solid rgb(122,186,255);
+    }
+    header .table-secondary, header .table-secondary th {
+      background-color: rgb(214,216,219);
+      border-top: solid rgb(179,183,187);
+    }
+    header .table-success, header .table-success th {
+      background-color: rgb(195,230,203);
+      border-top: solid rgb(143,209,158);
+    }
+    header .table-danger, header .table-danger th {
+      background-color: rgb(245,198,203);
+      border-top: solid rgb(237,150,158);
+    }
+    header .table-warning, header .table-warning th {
+       background-color:  rgb(255,238,186);
+       border-top: solid rgb(255,223,126);
+    }
+    header .table-info, header .table-info th {
+      background-color: rgb(190,229,235);
+      border-top: solid rgb(134,207,218);
+    }
+    header .table-light, header .table-light th {
+      border-top: solid white;
+    }
+    header .table-dark, header .table-dark th {
+      background-color: rgb(198,200,202);
+      border-top: solid rgb(67,77,85);
+      border-bottom: solid rgb(198,200,202);
+    }
+
+    footer .table {
+      margin: 12% auto;
+      width: 900px;
+      height: 300px;
+      border: 1px solid gray;
+      line-height: 70px;
+      border-collapse: collapse;
+      background-color: black;
+      color: white;
+      
+
+
+    }
+    footer .table tr td, footer .table tr th {
+      vertical-align: bottom;
+      border-bottom:  solid gray;
+      text-align: center;
+      background-color: black;
+      border-right: 0;
+      
+    }
+
+    footer .table > tbody > tr:hover > td, footer .table > thead > tr:hover > th,
+    footer .table > tbody > tr:hover > th  {
+         background-color:  rgb(236,236,236);
+         
+    }      
+     
+    
+    </style>
+</head>
+<body>
+  <div>
+    <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col"># </th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>  
+  
+  <header>
+   <table class="table">
+    <thead>
+      <tr>
+          <th scope="col">Class</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr class="table-active">
+         <th scope="row">Active</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-default">
+         <th scope="row">Default</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-primary">
+         <th scope="row">Primary</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-secondary">
+         <th scope="row">Secondary</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-success">
+         <th scope="row">Success</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-danger">
+         <th scope="row">Danger</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-warning">
+         <th scope="row">Warning</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-info">
+         <th scope="row">Info</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-light">
+         <th scope="row">Light</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+       <tr class="table-dark">
+         <th scope="row">Dark</th>
+         <td>cell</td>
+         <td>cell</td>
+       </tr>
+     </tbody>
+    </table>
+  </header>  
+  
+  <footer>
+    <table class="table table-sm table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </footer>  
+
+   
+</body>
+</html>
