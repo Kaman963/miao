@@ -15,21 +15,22 @@
 </script>
 
 <script id="ch0103/03">
-    var a = Number(prompt('input a'))
-    var b = Number(prompt('input b'))
-    var c = Number(prompt('input c'))
-    var r = ((a + b) / c)
-    console.log(r)
-  </script>
+  var a = Number(prompt('input a'))
+  var b = Number(prompt('input b'))
+  var c = Number(prompt('input c'))
+  var r = (parseInt((a + b) / c))
+  console.log(r)
+</script>
 
-  <script id="ch0103/04">
-    var a = Number(prompt('input a'))
-    var b = Number(prompt('input b'))
-    var c =(a / b)
-    var d =(a % b)
-    console.log(c)
-    console.log(d) 
-  </script>
+ <script id="ch0103/04">
+  var a = Number(prompt('input a'))
+  var b = Number(prompt('input b'))
+  var c =(a / b)
+  var c = c.toFixed(0)
+  var d =(a % b)
+  console.log(c)
+  console.log(d) 
+</script>
 
   <script id="ch0103/05">
     var a = Number(prompt('input a'))
@@ -246,9 +247,9 @@
 <script id="ch0104/08">
   var a = Number(prompt('input n'))
  if (a % 3 === 0 && a % 5 === 0) {
-   console.log('yes')
+   console.log('YES')
  } else {
-   console.log('no')
+   console.log('NO')
  }
 </script>
 
@@ -290,11 +291,11 @@
 <script id="ch0104/12">
   var a = Number(prompt('input a'))
   if (a / 1.2 > 83.33) {
-    console.log('bike')
+    console.log('Bike')
   } else if ((a / 3 + 50 == 83.33) || (a / 1.2 ==83.33)) {
-    console.log('all')
+    console.log('All')
   } else {
-    console.log('walk')
+    console.log('Walk')
   }
 </script>
 
